@@ -54,12 +54,12 @@ const Footer = () => {
         <div className="text-center text-neutral-400 mt-10 text-sm">
   Copyright © 2025 {" "}
   <a
-    href="https://maverickservices.in/"
+    href="https://matchbestsoftware.com/"
     target="_blank"
     rel="noopener noreferrer"
     className="text-purple-500 hover:underline"
   >
-    Maverick
+    Matchbest Software
   </a>
   . All Rights Reserved.
 </div>

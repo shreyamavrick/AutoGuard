@@ -68,7 +68,7 @@ export default function Signup() {
             {err && <p className="text-red-600 text-sm mb-3">{err}</p>}
             <form onSubmit={onSubmit} className="space-y-4">
               <input
-                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                 name="name"
                 placeholder="Full name"
                 value={form.name}
@@ -76,7 +76,7 @@ export default function Signup() {
                 required
               />
               <input
-                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                 name="email"
                 type="email"
                 placeholder="Email"
@@ -85,7 +85,7 @@ export default function Signup() {
                 required
               />
               <input
-                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                 name="phoneNo"
                 placeholder="Phone number"
                 value={form.phoneNo}
@@ -93,7 +93,7 @@ export default function Signup() {
                 required
               />
               <input
-                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                 name="password"
                 type="password"
                 placeholder="Password"
@@ -104,14 +104,14 @@ export default function Signup() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 rounded-full bg-blue-600 text-white font-semibold text-lg transition-all shadow hover:bg-blue-700 disabled:opacity-60"
+                className="w-full py-3 rounded-full bg-purple-600 text-white font-semibold text-lg transition-all shadow hover:bg-purple-700 disabled:opacity-60"
               >
                 {loading ? "Creating account..." : "Sign Up"}
               </button>
             </form>
             <p className="text-sm text-center mt-4">
               Already have an account?{" "}
-              <button onClick={() => navigate("/login")} className="text-blue-600 underline">
+              <button onClick={() => navigate("/login")} className="text-purple-600 underline">
                 Log in
               </button>
             </p>

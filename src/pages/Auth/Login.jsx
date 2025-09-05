@@ -92,7 +92,7 @@ export default function Login() {
               <button
                 className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-full transition-all font-semibold text-base
                   ${mode === "phone"
-                    ? "bg-blue-600 text-white shadow"
+                    ? "bg-purple-600 text-white shadow"
                     : "text-gray-700 hover:bg-gray-200"}`}
                 onClick={() => setMode("phone")}
                 type="button"
@@ -102,7 +102,7 @@ export default function Login() {
               <button
                 className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-full transition-all font-semibold text-base
                   ${mode === "password"
-                    ? "bg-blue-600 text-white shadow"
+                    ? "bg-purple-600 text-white shadow"
                     : "text-gray-700 hover:bg-gray-200"}`}
                 onClick={() => setMode("password")}
                 type="button"
@@ -116,7 +116,7 @@ export default function Login() {
             <form onSubmit={onSubmit} className="space-y-4">
               {mode === "phone" ? (
                 <input
-                  className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                  className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                   name="phoneNo"
                   placeholder="Phone number"
                   value={form.phoneNo}
@@ -125,7 +125,7 @@ export default function Login() {
               ) : (
                 <>
                   <input
-                    className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                    className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                     name="email"
                     type="email"
                     placeholder="Email"
@@ -133,7 +133,7 @@ export default function Login() {
                     onChange={onChange}
                   />
                   <input
-                    className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                    className="w-full border border-gray-300 rounded-full px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                     name="password"
                     type="password"
                     placeholder="Password"
@@ -145,7 +145,7 @@ export default function Login() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 rounded-full bg-blue-600 text-white font-semibold text-lg transition-all shadow hover:bg-blue-700 disabled:opacity-60"
+                className="w-full py-3 rounded-full bg-purple-600 text-white font-semibold text-lg transition-all shadow hover:bg-purple-700 disabled:opacity-60"
               >
                 {loading ? "Signing in..." : "Log In"}
               </button>
@@ -154,7 +154,7 @@ export default function Login() {
               Don&apos;t have an account?{" "}
               <button
                 onClick={() => navigate("/signup")}
-                className="text-blue-600 underline"
+                className="text-purple-600 underline"
               >
                 Sign Up
               </button>
