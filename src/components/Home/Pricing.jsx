@@ -76,7 +76,7 @@ const Pricing = () => {
             {/* Button */}
             <a
               href="#"
-              className="mt-auto block text-center w-full py-3 rounded-lg font-medium border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white transition"
+              className="mt-auto block text-center w-full py-3 rounded-lg font-medium border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white transition"
             >
               Purchase Now
             </a>
